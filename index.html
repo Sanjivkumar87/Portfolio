@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanjiv | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Sanjiv Shrivastav</h1>
+      <p id="roleText"></p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/resume.pdf" download>Resume</a>
+        <button id="toggleMode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a detail-oriented developer who enjoys turning problems into solutions with clean and efficient code.
+        I specialize in creating responsive front-end interfaces and have experience in Java, web development,
+        and version control systems like Git.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>Git & GitHub</li>
+        <li>Responsive Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="filter-buttons">
+        <button data-filter="all">All</button>
+        <button data-filter="web">Web</button>
+        <button data-filter="java">Java</button>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <h3>Voting Machine App</h3>
+        <p>Built a secure EVM using face recognition and JavaScript with a simulated backend. Includes user verification and vote count.</p>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <h3>Portfolio Website</h3>
+        <p>This portfolio is built with HTML, CSS, and JavaScript, demonstrating clean UI and responsive layout.</p>
+        <a href="#" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="project-card" data-category="java">
+        <h3>Library Management System</h3>
+        <p>A Java-based application to manage books, users, and transactions with SQL database integration.</p>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="messageStatus"></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Sanjiv Shrivastav. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn">⬆</button>
+
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
